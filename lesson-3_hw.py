@@ -81,7 +81,7 @@ class Prince(Human):
         super().__init__(name, age)
         self.cinderella_foot_size = cinderella_foot_size
 
-    def add_cinderella(self, item):
+    def add_and_find_cinderella(self, item):
         if isinstance(item, Cinderella):
             self.cinderella_list.append(item)
             if item.foot_size == self.cinderella_foot_size:
